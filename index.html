@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj - EMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="logo">
+        <img src="assets/Bajaj logo.png" alt="" srcset="">
+    </div>
+    <div class="container">
+        <div class="userImage">
+            <!-- <div  id="display-image">
+                <img id="hide" src="assets/pngegg.png" alt="" srcset="">
+                <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">    
+            </div> -->
+
+            <div id="display-image">
+                <img id="allen" src="assets/Allen Logo.png" alt="">
+                <img id="bank" class="hide" src="assets/bank logo.png" alt="">
+                <img id="app" class="hide" src="assets/online-form-icon.png" alt="">
+                <img id="doc" class="hide" src="assets/document-icon-36553.png" alt="">
+            </div>
+        </div>
+
+        <div class="allForms">
+            <div class="formChoice">
+                <select name="formType" class="input"id="formtype" onchange="getSelectedValue()"  >
+                    <option class="color" value="loanDetails">Loan Details</option>
+                    <option class="color" value="applicationForm">Application Form</option>
+                    <option class="color" value="bankingDetails">Banking Details</option>
+                    <option class="color" value="documnetUpload">Documnet Upload</option>
+                  </select>
+            </div>
+        
+
+            <div class="formContainer">
+                <div class="loanForm  heading2 " id="hideLone">
+                                    
+                    <form action="">
+                        <input type="text" placeholder="Institute Name">
+                        <input type="text" placeholder="Course Name">
+                        <div class="divder">
+                            <input class="margin" type="number" placeholder="Invoice Amount">
+                            <input class="marginleft" type="number" placeholder="Loan Amount">
+                        </div>
+                        <input type="text" placeholder="Scheme">
+
+                        <div class="btn">
+
+                            <button class="btn-submit" value="Submit">Proceed</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class=" hide" class="appForm heading2 " id="hideApp">
+                                    
+                    <form action="">
+                        <div class="divder">
+                            <input  class="margin" type="text" minlength="3" maxlength="20" placeholder="Father's Name">
+                            <input class="margin" minlength="3" maxlength="20" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="divder">
+                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" class="margin" type="number" placeholder="Mobile Number">
+                            <input class="marginleft"  minlength="3" maxlength="20"  type="number" placeholder="Date of Birth">
+                        </div>
+                        <div class="divder">
+                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"maxlength="20" class="margin" type="number" placeholder="PAN Number">
+                            <input class="marginleft"  minlength="3" maxlength="10" type="text" placeholder="Gender">
+                        </div>
+                        <div class="divder">
+                            <select class="marginleft" name="employmentType" id="">
+                                <option value="Employment Type">Employment Type</option>
+                                <option value="Employment Type">Employment Type</option>
+                                <option value="Employment Type">Employment Type</option>
+                            </select>
+                            <input class="marginleft" minlength="3" maxlength="20" type="number" placeholder="Monthly Income">
+                        </div>
+                        <div class="divder">
+                            <input minlength="3" maxlength="30" class="margin" type="text" placeholder="Student Full Name ">
+                            <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Address">
+                        </div>
+                        <div class="divder">
+                            <input minlength="3" maxlength="20" class="margin" type="text" placeholder="State ">
+                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" class="marginleft" type="text" placeholder="Zip Code">
+                        </div>
+                        <div class="divder">
+                            <input minlength="3" maxlength="20" class="margin" type="text" placeholder="City ">
+                            <input minlength="3" maxlength="40" class="marginleft" type="email" placeholder="Email ID">
+                        </div>
+                        
+
+                        <div class="btn">
+
+                            <button class="btn-submit" value="Submit">Proceed</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class=" hide" class="bankingDetails heading2 " id="hideBank">
+                                    
+                    <form action="">
+                        
+                        <div class="divder">
+                            <input minlength="3" maxlength="30"  class="margin" type="text" placeholder="Bank Name">
+                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" class="marginleft" type="number" placeholder="IFSC Code">
+                        </div>
+                        <div class="divder">
+                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="17"  class="margin" type="number" placeholder="Account Number">
+                            <input maxlength="11" class="marginleft" type="number" placeholder="Account Type">
+                        </div>
+                        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="17" type="text" placeholder="Re-enter Account Number">
+                        <input minlength="3" maxlength="30" type="text" placeholder="Account Holder Name">
+                        
+
+                        <div class="btn">
+
+                            <button class="btn-submit" value="Submit">Proceed</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class=" hide" class="documentDetails heading2 " id="hideDoc">
+                                    
+                    <form class="hideDoc" action="/thankYou.html">
+                        
+                        <div class="divder">
+                            <label for="custphoto" >Customer Photo</label>
+                            <input type="file" name="custphoto" accept="image/png, image/jpeg" id="">
+                        </div>
+                        <div class="divder">
+                            <label for="custPan" >PAN</label>
+                            <input type="file" name="custPan" accept="image/png, image/jpeg" id="">
+                        </div>
+                        <div class="divder aadhar">
+                            <label style="width: 54%;" for="custPan lable" >Address Proof</label>
+
+                                <button id="files" onclick="document.getElementById('file').click(); return false;">Aadhar</button>
+                                <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">
+                                <button id="files" onclick="document.getElementById('file').click(); return false;">Voter ID</button>
+                                <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">
+                                <button id="files" onclick="document.getElementById('file').click(); return false;">Other</button>
+                                <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">
+                          
+
+                        </div>
+                        <div class="divder aadhar">
+                            <label style="width: 42%;" for="custPan" >Address Proof</label>
+
+                                <button id="files" onclick="document.getElementById('file').click(); return false;">Aadhar</button>
+                                <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">
+
+                        </div>
+                        
+
+                        <div class="btn">
+
+                            <button class="btn-submit" value="Submit">Submit</button>
+                        </div>
+                    </form>
+                    <div class="homeContent">
+                        <p>Get the latest lifestyle and electronic products on no-cost EMI seamlessly with Bajaj Finserv EMI Network Card.</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

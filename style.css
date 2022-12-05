@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F1F1F1;
+    font-family: 'Poppins', sans-serif;
+}
+.logo img{
+    width: 4rem;
+    margin:1.5rem 1.5rem 0 1.5rem;
+}
+.container{
+    display: flex;
+    padding: 3rem;
+    margin: 0 10rem 0 10rem;
+}
+
+/* User Image */
+.user-image{
+    margin: 1rem;
+    display: flex;   
+}
+.user-image input{
+    
+    margin-bottom: 8px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+#display-image [type="file"]{
+   
+    opacity: 0;
+    width: 100%;
+    height: 90%;
+    
+}
+#display-image{
+    margin-top: 3rem;
+    margin-right: 5rem;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background-position: center;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-size: cover;
+  }
+#display-image img{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+}
+
+/* Form UI */
+.allForms{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    width: 45rem;
+    height: auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 50px 11px rgba(0,0,0,0.32);
+}
+.allForms .formChoice{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    height: auto;
+    margin-top: 1rem;
+}
+.allForms .formChoice select{
+    width: 70%;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 17px;
+    /* border: 2px solid #39A0F5; */
+    border-radius: 5px;
+}
+.input {
+    /* Reset. */
+    border: unset;
+  
+    /* Style */
+    /* width: 100%;
+    max-width: 400px; */
+    padding: 0.75rem;
+    border: 1px solid rgba(3, 3, 3, 0.1);
+  
+    /* Arrow */
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+  }
+
+.allForms .formContainer{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.loanForm{
+    width: 100%;
+    align-items: center;
+}
+.allForms input {
+    width: 70%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: 17px;
+    border: 2px solid #e5e5e5;
+}
+.allForms select {
+    width: 70%;
+    color: #757575;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: 17px;
+    border: 2px solid #e5e5e5;
+}
+.allForms .divder{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+}
+.allForms form{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.allForms .btn{
+    width: 100%;
+    height: auto;
+}
+.allForms .btn button{
+    width: 35%;
+    height: 3rem;
+    background: #52ACF6;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.allForms .btn button:hover{
+    background-color: #49a7f4;
+}
+
+.hideDoc input::file-selector-button{
+    font-weight: bold;
+    color: rgb(80, 83, 86);
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+.hideDoc .divder label{
+    width: 50%;
+    text-align: initial;
+}
+.hideDoc .divder input{
+    padding: 1px;
+}
+
+.hideDoc .aadhar input[type=file]{
+    color: transparent;
+}
+.hideDoc .aadhar button{
+    width: 6rem;
+    height: 2.5rem;
+    margin: 0 19px 19px 0;
+}
+.hideDoc .divder .lable {
+    width: 54% !important;
+} 
+.hide{
+    display: none;
+}
+
+/* ThankYou Style */
+.allForms img{
+    width: 150px;
+    height: 350px;
+    margin-right: 2rem;
+}
+.homeContent{
+    display: flex;
+    padding: 3rem;
+    text-align: center;
+    justify-content: end;
+    margin: 0 -1rem 0 -1rem;
+}
+.homeContent p{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    width: 45rem;
+    height: auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 10px 10px 50px 11px rgba(0,0,0,0.32);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 380px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 150px;
+        position: relative;
+        height: 200px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 250px;
+        height: 200px;
+    }
+    .homeContent{
+        display: flex;
+        padding: .6rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0;
+    }
+    .hideDoc .aadhar button {
+        width: 3rem;
+        height: 2.5rem;
+        margin: 0 0 19px 0;
+    }
+    .allForms{
+        width: 16rem !important;
+    }
+}
+@media only screen and (min-width:380px) and (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 150px;
+        position: relative;
+        height: 200px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 150px;
+        height: 200px;
+    }
+    .hideDoc .aadhar button {
+        width: 3.5rem;
+        height: 2.5rem;
+        margin: 0 0 19px 0;
+    }
+    .homeContent{
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0;
+    }
+    .allForms{
+        width: 23rem !important;
+    }
+}
+@media only screen and (min-width:480px) and (max-width: 620px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 150px;
+        position: relative;
+        height: 200px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 150px;
+        height: 200px;
+    }
+    .hideDoc .aadhar button {
+        width: 4.5rem;
+        height: 2.5rem;
+        margin: 0 0 19px 0;
+    }
+    .allForms{
+        width: 29rem !important;
+        margin: 0;
+    }
+    .homeContent{
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width:620px) and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 150px;
+        position: relative;
+        height: 200px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 150px;
+        height: 200px;
+    }
+    .allForms{
+        width: 32rem !important;
+    }
+    .hideDoc .aadhar button {
+        width: 5rem;
+        height: 2.5rem;
+        margin: 0 1px 19px 0;
+    }
+    .homeContent{
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0px .5rem 0 .5rem;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .container{
+        display: flex;
+        margin: 0 1rem 0 1rem;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 2rem 0 0;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 150px;
+        position: relative;
+        height: 200px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 150px;
+        height: 200px;
+    }
+    .allForms{
+        width: 45rem;
+    }
+    .hideDoc .aadhar button {
+        width: 6rem;
+        height: 2.5rem;
+        margin: 0 17px 19px 0;
+    }
+    .homeContent{
+        display: flex;
+        padding: 3rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0 -1rem 0 -1rem;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+    .container{
+        display: flex;
+        margin: 0 1rem 0 1rem;
+    }
+    .userImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 4rem 0 0;
+    }
+    #display-image{
+        margin-bottom: 2rem;
+        width: 200px;
+        position: relative;
+        height: 250px;
+        margin-right: 0px !important;
+        margin-top: 0px;
+    }
+    #display-image img {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 250px;
+    }
+    #display-image [type="file"] {
+        opacity: 0;
+        /* display: -webkit-box; */
+        width: 200px;
+        height: 250px;
+    }
+    .allForms{
+        width: 51rem;
+    }
+    .hideDoc .aadhar button {
+        width: 6rem;
+        height: 2.5rem;
+        margin: 0 30px 19px 0;
+    }
+    .homeContent{
+        display: flex;
+        padding: 3rem;
+        text-align: center;
+        justify-content: end;
+        margin: 0 -1rem  0 -1rem;
+    }
+}
