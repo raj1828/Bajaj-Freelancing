@@ -62,7 +62,7 @@
                     <form action="">
                         <div class="divder">
                             <input  class="margin " type="text" minlength="3" maxlength="20" placeholder="Parent's First Name">
-                            <input class="margin" minlength="3" maxlength="20" type="text" placeholder="Parent's Last Name">
+                            <input class="marginleft" minlength="3" maxlength="20" type="text" placeholder="Parent's Last Name">
                         </div>
                         <div class="divder">
                             <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" class="margin" type="number" placeholder="Parent's Mobile Number">
@@ -103,11 +103,11 @@
                             <input minlength="3" maxlength="40" class="marginleft" type="email" placeholder="Residence Type">
                         </div>
                         <div class="divder">
-                            <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Address Line 1">
-                            <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Address Line 1">
+                            <input class="margin" minlength="3" maxlength="40" type="text" placeholder="Address Line 1">
+                            <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Address Line 2">
                         </div>
                         <div class="divder">
-                            <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Address Line 3">
+                            <input class="margin" minlength="3" maxlength="40" type="text" placeholder="Address Line 3">
                             <input class="marginleft" minlength="3" maxlength="40" type="text" placeholder="Area/Locality">
                         </div>
                         
@@ -155,7 +155,7 @@
                             <input type="file" name="custPan" accept="image/png, image/jpeg" id="">
                         </div> -->
                         <div class="divder aadhar">
-                            <label style="width: 54%;" for="custPan lable" >POI Document</label>
+                            <label class="poiLabel" style="width: 51%;"  for="custPan lable" >POI Document</label>
 
                                 <button id="files" onclick="document.getElementById('file').click(); return false;">Aadhar</button>
                                 <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">
@@ -167,7 +167,7 @@
 
                         </div>
                         <div class="divder aadhar">
-                            <label style="width: 42%;" for="custPan" >Address Proof</label>
+                            <label class="poiLabel" style="width: 42%;" for="custPan" >Address Proof</label>
 
                                 <button id="files" onclick="document.getElementById('file').click(); return false;">Aadhar</button>
                                 <input type="file" name="custPan" accept="image/png, image/jpeg" id="file" style="visibility: hidden; display: none;">

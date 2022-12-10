@@ -226,27 +226,33 @@ body{
         display: flex;
         flex-direction: column;
         margin: 0 0 0 0;
+        padding: 0 0 0 2rem;
     }
     .userImage{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 19rem;
+    }
+    .poiLabel{
+        width: 35% !important;
     }
     #display-image{
-        margin-bottom: 2rem;
-        width: 150px;
+        margin-bottom: 0rem;
+        width: 100%;
         position: relative;
-        height: 200px;
+        height: 150px;
         margin-right: 0px !important;
         margin-top: 0px;
     }
     #display-image img {
-        width: 150px;
+        width: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        height: 200px;
+        height: 111px;
+        padding: 0 81px 0 81px;
     }
     #display-image [type="file"] {
         opacity: 0;
@@ -266,12 +272,19 @@ body{
         height: 2.5rem;
         margin: 0 0 19px 0;
     }
+    .allForms .divder{
+        width: 95%;
+    }
+    .allForms .formChoice select{
+        width: 95%;
+    }
     .allForms{
-        width: 16rem !important;
+        width: 19.7rem !important;
     }
     .allForms input{
         font-size: 11px;
         padding: 0;
+        width: 95%;
     }
     .allForms input{
         font-size: 11px;
@@ -280,17 +293,20 @@ body{
     .allForms select{
         font-size: 11px;
         padding: 0.2rem;
+        width: 94%;
     }
 }
 @media only screen and (min-width:380px) and (max-width: 480px){
     .container{
         display: flex;
         flex-direction: column;
-        margin: 0 1rem 0 1rem;
+        margin: 0 0rem 0 0rem;
+        padding: 0rem 1.5rem;
     }
     .allForms input{
         font-size: 11px;
         padding: 0.2rem;
+        width: 95%;
     }
     .allForms select{
         font-size: 11px;
@@ -303,19 +319,20 @@ body{
         text-align: center;
     }
     #display-image{
-        margin-bottom: 2rem;
-        width: 150px;
+        margin-bottom: 0rem;
+        width: 100%;
         position: relative;
         height: 200px;
         margin-right: 0px !important;
         margin-top: 0px;
     }
     #display-image img {
-        width: 300px;
+        width: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        height: 200px;
+        height: 160px;
+        padding: 0 81px 0 81px;
     }
     #display-image [type="file"] {
         opacity: 0;
@@ -336,7 +353,13 @@ body{
         margin: 0;
     }
     .allForms{
-        width: 23rem !important;
+        width: 27rem !important;
+    }
+    .allForms .divder{
+        width: 95%;
+    }
+    .allForms .formChoice select{
+        width: 95%;
     }
 }
 @media only screen and (min-width:480px) and (max-width: 620px){
@@ -488,6 +511,9 @@ body{
         width: 150px;
         height: 200px;
     }
+    .poiLabel2{
+        width: 87% !important;
+    }
     .allForms{
         width: 45rem;
     }
@@ -536,6 +562,9 @@ body{
         /* display: -webkit-box; */
         width: 200px;
         height: 250px;
+    }
+    .poiLabel{
+        width: 120% !important;
     }
     .allForms{
         width: 51rem;
